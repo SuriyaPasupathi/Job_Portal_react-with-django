@@ -1,52 +1,67 @@
+# Dependencies
+node_modules/
+/node_modules
+**/node_modules
+frontend/node_modules/
+package-lock.json
+
 # Environment files
 .env
 env/
 backend/.env
 frontend/.env
 **/venv/
-.venv/
-ENV/
-env.bak/
-venv.bak/
-pythonenv*
-.python-version
+**/__pycache__/
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Local development
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-**/__pycache__/
-*.py[cod]
-*$py.class
-**/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Media and Static
+media/
+static/
+uploads/
 
 # Database
 *.sqlite3
 *.db
 db.sqlite3-journal
 
-# Media files
-media/
-backend/media/
-uploads/
-
 # Static files
-static/
 backend/static/
 staticfiles/
 .static_storage/
 .media/
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pip-log.txt
-pip-delete-this-directory.txt
-
 # IDE specific files
-.idea/
-.vscode/
 *.swp
 *.swo
 *.sublime-workspace
@@ -60,10 +75,6 @@ pip-delete-this-directory.txt
 **/build/
 **/dist/
 frontend/dist/
-*.egg-info/
-dist/
-build/
-eggs/
 parts/
 bin/
 var/
@@ -76,94 +87,6 @@ lib64/
 # Cache
 .cache/
 .pytest_cache/
-__pycache__/
-.coverage
-.coverage.*
-coverage.xml
-*.cover
-htmlcov/
-.hypothesis/
-.tox/
-
-# Python environment folders
-.env
-env/
-backend/.env
-frontend/.env
-**/venv/
-.venv/
-ENV/
-env.bak/
-venv.bak/
-pythonenv*
-.python-version
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-**/__pycache__/
-*.py[cod]
-*$py.class
-**/node_modules/
-
-# Database
-*.sqlite3
-*.db
-db.sqlite3-journal
-
-# Media files
-media/
-backend/media/
-uploads/
-
-# Static files
-static/
-backend/static/
-staticfiles/
-.static_storage/
-.media/
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pip-log.txt
-pip-delete-this-directory.txt
-
-# IDE specific files
-.idea/
-.vscode/
-*.swp
-*.swo
-*.sublime-workspace
-*.sublime-project
-.project
-.pydevproject
-.settings/
-.DS_Store
-
-# Build files
-**/build/
-**/dist/
-frontend/dist/
-*.egg-info/
-dist/
-build/
-eggs/
-parts/
-bin/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
-
-# Cache
-.cache/
-.pytest_cache/
-__pycache__/
 .coverage
 .coverage.*
 coverage.xml
